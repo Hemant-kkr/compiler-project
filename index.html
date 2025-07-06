@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Code Compiler</title>
+    <style>
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        select,
+        button {
+            margin: 10px 0;
+        }
+
+        #output {
+            background: #000000;
+            padding: 10px;
+            min-height: 100px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Code Compiler</h2>
+    <select id="language">
+        <option value="0">Python</option>
+        <option value="4">JavaScript</option>
+        <option value="7">C</option>
+        <option value="77">C++</option>
+        <option value="8">Java</option>
+    </select><br>
+    <textarea id="code" placeholder="Write your code here..."></textarea><br>
+    <button onclick="compileCode()">Compile Code</button>
+    <h3> Output:</h3>
+    <div id="output">Waiting for result...</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
